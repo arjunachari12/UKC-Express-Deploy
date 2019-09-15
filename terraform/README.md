@@ -2,7 +2,7 @@
 
 1. Download *UKC_unbound.tf* and *UKC_variables.tf* files from this repo.
 
-2. Edit *UKC_variables.tf*: replace every *"!!!!!! replace it with ......... !!!!!!"* string by the relevant value.
+2. Edit *UKC_variables.tf*. Replace every *"!!!!!! replace it with ......... !!!!!!"* string by the relevant value.
 
 ## Launch UKC
 1. Start Terraform.
