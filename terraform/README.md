@@ -30,14 +30,31 @@ All of these steps should be executed on your AWS server.
     - UKC_unbound.tf - Terraform configuration file.
 1. Download the UKC package.
     - ekm-2.0.XXX.YYYYY-RHES.x86_64.rpm
-    
-# Deploy UKC Using Terraform
 
-1. Download *UKC_unbound.tf* and *UKC_variables.tf* files from this repo.
+**Step 4: Configure the Terraform files**
+1. Locate your *Access Key* and *Secret Access Key* on AWS:
+    - Log into your [AWS Management Console](https://console.aws.amazon.com/console).
+	- Click on your username at the top right of the page.
+	- Click on the **Security Credentials** link from the drop-down menu.
+	- Find the *Access Credentials* section, and copy the latest *Access Key ID*.
+	- Click on the **Show** link in the same row, and copy the *Secret Access Key*.
+1. Edit *UKC_unbound.tf*. In the file, set the *Access Key ID* and *Secret Access Key*.
+1. Edit *KC_variables.tf*. In the file, set all the following variables:
+    - variable "access_key" - *Access Key ID* from AWS.
+    - variable "secret_key" - *Secret Access Key* from AWS.
+    - variable "resource-group-name" - 
+    - variable "ep_public_key_path" - 
+    - variable "ep_private_key_path" - 
+    - variable "partner_public_key_path" - 
+    - variable "partner_private_key_path" - 
+    - variable "key_name_0" - 
+    - variable "key_name_1" - 
+    - variable "password1" - 
+    - variable "aws_region" - 
+    - variable "ukc_rpm" - the UKC package name downloaded in Step 3.
+    - variable "os_user_0" - 
 
-2. Edit *UKC_variables.tf*. Replace every *"!!!!!! replace it with ......... !!!!!!"* string by the relevant value.
-
-## Launch UKC
+##Step 5: Launch Terraform
 1. Start Terraform.
    ```
    $ terraform init
@@ -51,7 +68,7 @@ All of these steps should be executed on your AWS server.
    $ terraform plan -out=demo.plan -no-color --var "provide_ssh=true" | tee demo.plan.out
    ```
 
-## Terminate UKC
+## To Terminate UKC
 Use this command to terminate UKC.
    ```
    $ terraform destroy -auto-approve --var "provide_ssh=true"
