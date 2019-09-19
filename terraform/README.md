@@ -54,7 +54,7 @@ All of these steps should be executed on your AWS server.
     - variable "ukc_rpm" - the UKC package name downloaded in Step 3.
     - variable "os_user_0" - 
 
-##Step 5: Launch Terraform
+**Step 5: Launch Terraform**
 1. Start Terraform.
    ```
    $ terraform init
