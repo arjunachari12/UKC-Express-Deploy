@@ -8,9 +8,11 @@ variable "partner_private_key_path" { default = "/home/<your user>/.ssh/<private
 variable "key_name_0" { default = "Terraform-UKC-EP-key" }
 variable "key_name_1" { default = "Terraform-UKC-Partner-AUX-key" }
 variable "password1" { default = "Password1!" }
-variable "aws_region" { default = "sa-east-1" }
-variable "ukc_rpm" { default = "ekm-2.0.1905.36686-RHES.x86_64.rpm" }
-variable "os_user_0" {default = "centos" }
+variable "aws_region" { default = "<AWS region>" }
+variable "ukc_rpm" { default = "ekm-<UKC version>-RHES.x86_64.rpm" }
+variable "path_to_ukc_rpm" { default = "." }
+variable "os_user_0" { default = "centos" }
+variable "instance_type_ukc" { default = "<AWS instance type>" }
 
 
 variable "provide_ssh" {

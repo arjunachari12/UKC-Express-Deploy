@@ -52,6 +52,7 @@ All of these steps should be executed on your AWS server.
     - variable "password1" - 
     - variable "aws_region" - 
     - variable "ukc_rpm" - the UKC package name downloaded in Step 3.
+    - variable "path_to_ukc_rpm" - full or relative path to UKC package; leave empty or type "./", if this is current directory.
     - variable "os_user_0" - 
 
 **Step 5: Launch Terraform**

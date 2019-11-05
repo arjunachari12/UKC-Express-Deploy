@@ -217,7 +217,7 @@ resource "null_resource" "install_ukc_on_aux" {
   ]
 
   provisioner file {
-    source      = "${var.ukc_rpm}"
+    source      = "${var.path_to_ukc_rpm}${var.ukc_rpm}"
     destination = "/home/${var.os_user_0}/${var.ukc_rpm}"
   }
 
@@ -245,7 +245,7 @@ resource "null_resource" "install_ukc_on_partner" {
   ]
 
   provisioner file {
-    source      = "${var.ukc_rpm}"
+    source      = "${var.path_to_ukc_rpm}${var.ukc_rpm}"
     destination = "/home/${var.os_user_0}/${var.ukc_rpm}"
   }
 
@@ -270,7 +270,7 @@ resource "null_resource" "install_ukc_on_ep" {
   ]
 
   provisioner file {
-    source      = "${var.ukc_rpm}"
+    source      = "${var.path_to_ukc_rpm}${var.ukc_rpm}"
     destination = "/home/${var.os_user_0}/${var.ukc_rpm}"
   }
 
@@ -371,7 +371,7 @@ resource "aws_instance" "ep" {
   }
 
   ami           = data.aws_ami.centos.id
-  instance_type = "t2.small"
+  instance_type = "${var.instance_type_ukc}"
 
   key_name               = "${aws_key_pair.auth_ep.id}"
   subnet_id              = "${aws_subnet.public.id}"
@@ -647,7 +647,7 @@ resource "aws_instance" "partner" {
 
 
   ami           = data.aws_ami.centos.id
-  instance_type = "t2.small"
+  instance_type = "${var.instance_type_ukc}"
 
   key_name               = "${aws_key_pair.auth_partner_aux.id}"
   subnet_id              = "${aws_subnet.private1.id}"
@@ -680,7 +680,7 @@ resource "aws_instance" "aux" {
   }
 
   ami           = data.aws_ami.centos.id
-  instance_type = "t2.small"
+  instance_type = "${var.instance_type_ukc}"
 
   key_name               = "${aws_key_pair.auth_partner_aux.id}"
   subnet_id              = "${aws_subnet.private1.id}"
