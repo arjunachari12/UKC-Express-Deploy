@@ -8,7 +8,7 @@ This implementation is only for demo proposes. For production, you can [Deploy U
 
 ## 1.1. Getting Started
 
-1. Complete the [General Prerequisites](../README.md#General-Prerequsites).
+1. Contact Unbound ([support@unboundtech.com](mailto:support@unboundtech.com)) to get access to the Docker images.
 1. Install Docker.
     - For Windows:
         - Install Docker Desktop CE (community edition). It must include Docker Engine version 19.03 or newer. You can get the latest version from [Docker](https://hub.docker.com/?overlay=onboarding).
