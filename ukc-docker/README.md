@@ -24,24 +24,11 @@ This implementation is only for demo proposes. For production, you can [Deploy U
        
 1. [Request](mailto:support@unboundtech.com) to be added to Unbound's Docker organization.
 1. Download or clone this repository from the [main page](https://github.com/unbound-tech/UKC-Express-Deploy) or click [here](https://github.com/unbound-tech/UKC-Express-Deploy/archive/master.zip).
-1. The downloaded repository file should be uncompressed and placed on the device where you will run Docker. The download contains a folder called *ukc-docker*. You must start Docker from this folder.
-1. Open a terminal and navigate to the `ukc-docker` folder.
-1. Create a file called *.env* in the same folder as the repository. The *.env* file holds your access tokens (see [Prerequisites](#Prerequisites)). 
-
-   Note: The file must not have any prefix, i.e. the file name must be *.env*. If you are on Windows and it doesn't let you create a file with this name, use *.env.* (with a period at the end) for the name, then click OK twice, and it will create the *.env* file.
-   
-   Note: The file must be in the same folder as *docker-compose.yml*.
-
-   For example:
-
-   ```ini
-    INFURA_TOKEN=<Replace with Infura access token>
-    BLOCKCYPHER_TOKEN=<Replace with BlockCypher access token>
-    FIREBASE_TOKEN=<Replace with Firebase token provided by Unbound>
-   ```
+1. The downloaded repository file should be uncompressed and placed on the device where you will run Docker. The download contains a folder called *ukc-docker*. You must run the Docker commands from this folder.
 1. For Windows, start Docker on your device.
 
    You can check if Docker is running with the command `docker info`. If it returns an error, then it is not running. Otherwise, it returns status information about the Docker installation.
+1. Open a terminal and navigate to the `ukc-docker` folder.
 1. Run this command to log into Docker:
     ```bash
 	docker login
@@ -83,10 +70,7 @@ This release has these associated documents:
 
 - [UKC User Guide](https://www.unboundtech.com/docs/UKC/UKC_User_Guide/HTML/Content/Products/Unbound_Cover_Page.htm)
     - [UKC Web UI](https://www.unboundtech.com/docs/UKC/UKC_User_Guide/HTML/Content/Products/UKC-EKM/UKC_User_Guide/UI/A1.html) - explore more about the Web UI.
-	- [CASP Mobile App](https://www.unboundtech.com/docs/CASP/CASP_User_Guide-HTML/Content/Products/CASP/CASP_User_Guide/Mobile_App.htm) - add more participants that use the CASP Mobile app.
-- [CASP Frequently Asked Questions](https://www.unboundtech.com/docs/CASP/CASP_FAQ-HTML/Content/Products/Unbound_Cover_Page.htm)
-- [CASP Developers Guide with API Reference](https://www.unboundtech.com/docs/CASP/CASP_Developers_Guide-HTML/Content/Products/Unbound_Cover_Page.htm)
-- [CASP Participant SDK](https://www.unboundtech.com/docs/CASP/CASP_Participant_SDK-HTML/Content/Products/Unbound_Cover_Page.htm)
+
 
 ## 1.4. Troubleshooting
 
