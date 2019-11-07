@@ -18,19 +18,6 @@ The UKC implementation is comprised of the following components:
 
 Both deployment options install all of the above components. After installation, you can log into the UKC web interface and start using UKC!
 
-<a name="General-Prerequsites"></a>
-## General Prerequsites
-The following are required before installing UKC. 
-1. An Infura access token (only needed for Ethereum ledger access). See [Infura](https://infura.io/register).
-   - Register for the Infura site.
-   - Create a new project.
-   - Copy the access token from the project page.
-1. BlockCypher access token (only needed for Bitcoin ledger access). See [BlockCypher](https://accounts.blockcypher.com/signup).
-   - Register for the Blockcypher site.
-   - After verifying your email, it opens a page that displays the token.
-1. Firebase messaging token (to enable push notifications). Contact Unbound ([support@unboundtech.com](mailto:support@unboundtech.com)) for it.
-    - For express deploy using Docker, you must contact Unbound ([support@unboundtech.com](mailto:support@unboundtech.com)) to get access to the Docker images, even if you are not going to use a Firebase token (such as if you are not going to use push notifications). 
-
 ## Installation
 After completing the prerequisites, follow the instructions based on the installation type:
 - [Docker](./ukc-docker)
