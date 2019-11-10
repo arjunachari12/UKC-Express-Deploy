@@ -212,14 +212,14 @@ resource "null_resource" "install_ukc_on_aux" {
   ]
 
   provisioner file {
-    source      = "${var.path_to_ukc_pac}${var.ukc_pac}"
-    destination = "/home/${var.os_user_0}/${var.ukc_pac}"
+    source      = "${var.ukc_pac}"
+    destination = "/home/${var.os_user_0}/ukc.deb"
   }
 
   provisioner "remote-exec" {
     inline = [
-      "echo + sudo dpkg -i /home/${var.os_user_0}/${var.ukc_pac}",
-      "sudo dpkg -i /home/${var.os_user_0}/${var.ukc_pac}",
+      "echo + sudo dpkg -i /home/${var.os_user_0}/ukc.deb",
+      "sudo dpkg -i /home/${var.os_user_0}/ukc.deb",
     ]
   }
 }
@@ -240,14 +240,14 @@ resource "null_resource" "install_ukc_on_partner" {
   ]
 
   provisioner file {
-    source      = "${var.path_to_ukc_pac}${var.ukc_pac}"
-    destination = "/home/${var.os_user_0}/${var.ukc_pac}"
+    source      = "${var.ukc_pac}"
+    destination = "/home/${var.os_user_0}/ukc.deb"
   }
 
   provisioner "remote-exec" {
     inline = [
-      "echo + sudo dpkg -i /home/${var.os_user_0}/${var.ukc_pac}",
-      "sudo dpkg -i /home/${var.os_user_0}/${var.ukc_pac}",
+      "echo + sudo dpkg -i /home/${var.os_user_0}/ukc.deb",
+      "sudo dpkg -i /home/${var.os_user_0}/ukc.deb",
     ]
   }
 }
@@ -265,14 +265,14 @@ resource "null_resource" "install_ukc_on_ep" {
   ]
 
   provisioner file {
-    source      = "${var.path_to_ukc_pac}${var.ukc_pac}"
-    destination = "/home/${var.os_user_0}/${var.ukc_pac}"
+    source      = "${var.ukc_pac}"
+    destination = "/home/${var.os_user_0}/ukc.deb"
   }
 
   provisioner "remote-exec" {
     inline = [
-      "echo + sudo dpkg -i /home/${var.os_user_0}/${var.ukc_pac}",
-      "sudo dpkg -i /home/${var.os_user_0}/${var.ukc_pac}",
+      "echo + sudo dpkg -i /home/${var.os_user_0}/ukc.deb",
+      "sudo dpkg -i /home/${var.os_user_0}/ukc.deb",
     ]
   }
 }

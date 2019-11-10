@@ -217,14 +217,14 @@ resource "null_resource" "install_ukc_on_aux" {
   ]
 
   provisioner file {
-    source      = "${var.path_to_ukc_rpm}${var.ukc_rpm}"
-    destination = "/home/${var.os_user_0}/${var.ukc_rpm}"
+    source      = "${var.ukc_pac}"
+    destination = "/home/${var.os_user_0}/ukc.rpm"
   }
 
   provisioner "remote-exec" {
     inline = [
-      "echo + sudo rpm -i /home/${var.os_user_0}/${var.ukc_rpm}",
-      "sudo rpm -i /home/${var.os_user_0}/${var.ukc_rpm}",
+      "echo + sudo rpm -i /home/${var.os_user_0}/ukc.rpm",
+      "sudo rpm -i /home/${var.os_user_0}/ukc.rpm",
     ]
   }
 }
@@ -245,14 +245,14 @@ resource "null_resource" "install_ukc_on_partner" {
   ]
 
   provisioner file {
-    source      = "${var.path_to_ukc_rpm}${var.ukc_rpm}"
-    destination = "/home/${var.os_user_0}/${var.ukc_rpm}"
+    source      = "${var.ukc_pac}"
+    destination = "/home/${var.os_user_0}/ukc.rpm"
   }
 
   provisioner "remote-exec" {
     inline = [
-      "echo + sudo rpm -i /home/${var.os_user_0}/${var.ukc_rpm}",
-      "sudo rpm -i /home/${var.os_user_0}/${var.ukc_rpm}",
+      "echo + sudo rpm -i /home/${var.os_user_0}/ukc.rpm",
+      "sudo rpm -i /home/${var.os_user_0}/ukc.rpm",
     ]
   }
 }
@@ -270,14 +270,14 @@ resource "null_resource" "install_ukc_on_ep" {
   ]
 
   provisioner file {
-    source      = "${var.path_to_ukc_rpm}${var.ukc_rpm}"
-    destination = "/home/${var.os_user_0}/${var.ukc_rpm}"
+    source      = "${var.ukc_pac}"
+    destination = "/home/${var.os_user_0}/ukc.rpm"
   }
 
   provisioner "remote-exec" {
     inline = [
-      "echo + sudo rpm -i /home/${var.os_user_0}/${var.ukc_rpm}",
-      "sudo rpm -i /home/${var.os_user_0}/${var.ukc_rpm}",
+      "echo + sudo rpm -i /home/${var.os_user_0}/ukc.rpm",
+      "sudo rpm -i /home/${var.os_user_0}/ukc.rpm",
     ]
   }
 }

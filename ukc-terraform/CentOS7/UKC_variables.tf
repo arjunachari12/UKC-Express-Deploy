@@ -9,11 +9,9 @@ variable "key_name_0" { default = "Terraform-UKC-EP-key" }
 variable "key_name_1" { default = "Terraform-UKC-Partner-AUX-key" }
 variable "password1" { default = "Password1!" }
 variable "aws_region" { default = "<AWS region>" }
-variable "ukc_rpm" { default = "ekm-<UKC version>-RHES.x86_64.rpm" }
-variable "path_to_ukc_rpm" { default = "<path to the package>" }
+variable "ukc_pac" { default = "ekm-<UKC version>-RHES.x86_64.rpm" }
 variable "os_user_0" { default = "centos" }
 variable "instance_type_ukc" { default = "<AWS instance type>" }
-
 
 variable "provide_ssh" {
   description = "If true, id_rsa key will be copied to bastion and hosts in the private subnet will be accessible by 2 hops"
