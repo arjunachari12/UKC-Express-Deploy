@@ -68,16 +68,33 @@ The Web UI provides the following screens:
 - Rescue - use to reset the SO password.
 - Help - open the UKC User Guide.
 
-## 1.3. More Information
+## 1.3. Restarting/Updating Docker
+
+To update and restart Docker:
+
+1. Ensure that the previous session is finished:
+    ```bash
+    docker-compose down
+    ```
+2. Get the latest files:
+    ```bash
+    docker-compose pull
+    ```
+3. Start Docker:
+    ```bash
+    docker-compose up
+    ```
+    
+## 1.4. More Information
 This release has these associated documents:
 
 - [UKC User Guide](https://www.unboundtech.com/docs/UKC/UKC_User_Guide/HTML/Content/Products/Unbound_Cover_Page.htm)
     - [UKC Web UI](https://www.unboundtech.com/docs/UKC/UKC_User_Guide/HTML/Content/Products/UKC-EKM/UKC_User_Guide/UI/A1.html) - explore more about the Web UI.
 
 
-## 1.4. Troubleshooting
+## 1.5. Troubleshooting
 
-### 1.4.1. Cannot open the web console
+### 1.5.1. Cannot open the web console
 
 If you cannot open the UKC web console in your browser, you might have port 443 in use by another service.
 
@@ -93,26 +110,9 @@ For example, to change the port from 443 to 9443:
     ```
 3. Use `https://localhost:9443/login` to open UKC web console.
 
-### 1.4.2. Restarting Docker
+## 1.6. Tips
 
-To restart Docker:
-
-1. Ensure that the previous session is finished:
-    ```bash
-    docker-compose down
-    ```
-2. Get the latest files:
-    ```bash
-    docker-compose pull
-    ```
-3. Start Docker:
-    ```bash
-    docker-compose up
-    ```
-    
-## 1.5. Tips
-
-### 1.5.1. Installing Docker on CentOS 7
+### 1.6.1. Installing Docker on CentOS 7
 
 The default Docker installed by `yum` is an older version of Docker. You can use the technique below to update to a newer Docker version.
 
