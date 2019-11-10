@@ -42,7 +42,7 @@ This implementation is only for demo proposes. For production, you can [Deploy U
 	
 	Everything is installed and working when you see this message:
     ```
-    WHAT should be here?
+    UKC system is ready
     ```
     
     Note: Docker takes several minutes to create the UKC system. If it hangs for too long, use `Ctrl-c` to stop the process and then run the following commands to restart:
@@ -50,7 +50,7 @@ This implementation is only for demo proposes. For production, you can [Deploy U
     docker-compose down
     docker-compose up
     ```
-1. Open your browser and navigate to `https://localhost/caspui`. Use these credentials to log in:
+1. Open your browser and navigate to `https://localhost/login`. Use these credentials to log in:
     - Username: so
 	- Password: Unbound1!
 
@@ -59,11 +59,14 @@ This implementation is only for demo proposes. For production, you can [Deploy U
 ## 1.2. Explore the Web Interface
 The Web UI provides the following screens:
 
-- Accounts - provides information about your accounts, including the pending and total number of participants, vaults and operations.
-- Users - lists all users for the account.
-- Vaults - lists all vaults associated with the account.
-- Operations - lists all quorum operations for the account.
-- System - provides status information about various components in the system.
+- Keys and Certificates - provides information about your keys and certificates.
+- Partitions - lists all partitions.
+- Clients - lists all client.
+- Users - lists all users.
+- Authorize - shows operations that are pending approval.
+- Config - shows the UKC settings.
+- Rescue - use to reset the SO password.
+- Help - open the UKC User Guide.
 
 ## 1.3. More Information
 This release has these associated documents:
@@ -88,7 +91,7 @@ For example, to change the port from 443 to 9443:
     docker-compose down
     docker-compose up
     ```
-3. Use `https://localhost:9443/caspui` to open UKC web console.
+3. Use `https://localhost:9443/login` to open UKC web console.
 
 ### 1.4.2. Restarting Docker
 
