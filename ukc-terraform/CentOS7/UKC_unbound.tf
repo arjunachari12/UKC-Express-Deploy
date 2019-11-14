@@ -5,8 +5,7 @@
 provider "aws" {
   access_key = "${var.access_key}"
   secret_key = "${var.secret_key}"
-
-  region = "${var.aws_region}"
+  region     = "${var.aws_region}"
 }
 
 data "aws_availability_zones" "available" {}
@@ -85,8 +84,7 @@ resource "aws_subnet" "public" {
   vpc_id                  = "${aws_vpc.unbound.id}"
   cidr_block              = "10.138.0.0/24"
   map_public_ip_on_launch = true
-
-  availability_zone = "${data.aws_availability_zones.available.names[0]}"
+  availability_zone       = "${data.aws_availability_zones.available.names[0]}"
 
   tags = {
     Name = "${var.resource-group-name}: Public subnet 0"
@@ -97,10 +95,8 @@ resource "aws_subnet" "private1" {
   vpc_id                  = "${aws_vpc.unbound.id}"
   cidr_block              = "10.138.1.0/24"
   map_public_ip_on_launch = true
-
-  availability_zone = "${data.aws_availability_zones.available.names[0]}"
-
-  depends_on = ["aws_route53_zone.unbound"]
+  availability_zone       = "${data.aws_availability_zones.available.names[0]}"
+  depends_on              = ["aws_route53_zone.unbound"]
 
   tags = {
     Name = "${var.resource-group-name}: Private subnet 1"
@@ -363,13 +359,6 @@ resource "null_resource" "install_java_ep" {
 # EP / bastion
 #########################################
 resource "aws_instance" "ep" {
-  connection {
-    host = coalesce(self.public_ip, self.private_ip)
-    type = "ssh"
-    user = "${var.os_user_0}"
-    private_key = "${file(var.ep_private_key_path)}"
-  }
-
   ami           = data.aws_ami.centos.id
   instance_type = "${var.instance_type_ukc}"
 
@@ -635,17 +624,6 @@ resource "aws_route53_record" "ep" {
 }
 
 resource "aws_instance" "partner" {
-  connection {
-    bastion_host 	= "${aws_instance.ep.public_ip}"
-    bastion_user 	= "${var.os_user_0}"
-    bastion_private_key = "${file(var.ep_private_key_path)}"
-    host		= coalesce(self.public_ip, self.private_ip)
-    type         	= "ssh"
-    user         	= "${var.os_user_0}"
-    private_key  	= "${file(var.partner_private_key_path)}"
-  }
-
-
   ami           = data.aws_ami.centos.id
   instance_type = "${var.instance_type_ukc}"
 
@@ -669,16 +647,6 @@ resource "aws_route53_record" "partner" {
 }
 
 resource "aws_instance" "aux" {
-  connection {
-    bastion_host 	= "${aws_instance.ep.public_ip}"
-    bastion_user 	= "${var.os_user_0}"
-    bastion_private_key = "${file(var.ep_private_key_path)}"
-    host		= coalesce(self.public_ip, self.private_ip)
-    type         	= "ssh"
-    user         	= "${var.os_user_0}"
-    private_key  	= "${file(var.partner_private_key_path)}"
-  }
-
   ami           = data.aws_ami.centos.id
   instance_type = "${var.instance_type_ukc}"
 

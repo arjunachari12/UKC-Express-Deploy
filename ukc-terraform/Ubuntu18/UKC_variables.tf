@@ -9,7 +9,7 @@ variable "key_name_0" { default = "Terraform-UKC-EP-key" }
 variable "key_name_1" { default = "Terraform-UKC-Partner-AUX-key" }
 variable "password1" { default = "Password1!" }
 variable "aws_region" { default = "<AWS region>" }
-variable "ukc_pac" { default = "ekm-<UKC version>-RHES.x86_64.deb" }
+variable "ukc_pac" { default = "ekm-<UKC version>.deb" }
 variable "os_user_0" { default = "ubuntu" }
 variable "instance_type_ukc" { default = "<AWS instance type>" }
 
