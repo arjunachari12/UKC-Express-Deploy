@@ -16,10 +16,10 @@
     - At least 2 CPU cores.
 	- Open SSL 1.1 or newer.
 	
-**Step 2: Install Terraform**
+**Step 2: Download Terraform**
 1. Download Terraform for Linux from [here](https://www.terraform.io/downloads.html).
     - You need Terraform 0.12 or newer.
-1. Uncompress the archive that you downloaded.
+1. Uncompress the archive that you downloaded. It contains the Terraform executable.
 
 **Step 3: Download the UKC repo**
 
@@ -29,8 +29,8 @@ All of these steps should be executed on your AWS server.
     It contains these files:
     - UKC_variables.tf - Terraform configuration file.
     - UKC_unbound.tf - Terraform configuration file.
-1. Download the UKC package.
-    - ekm-2.0.XXX.YYYYY-RHES.x86_64.rpm
+1. Download the UKC package. (How do they get this link?)
+    - For example, on CentOS: ekm-2.0.XXX.YYYYY-RHES.x86_64.rpm
 
 **Step 4: Configure the Terraform files**
 1. Locate your *Access Key* and *Secret Access Key* on AWS:
@@ -56,7 +56,7 @@ All of these steps should be executed on your AWS server.
     - variable "os_user_0" - 
 
 **Step 5: Launch Terraform**
-1. Start Terraform.
+1. Start Terraform. This step uses the executable that was downloaded in Step 2. You may need to add it to your path.
    ```
    $ terraform init
    ```
