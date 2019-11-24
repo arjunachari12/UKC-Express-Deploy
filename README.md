@@ -21,6 +21,6 @@ The UKC implementation is comprised of the following components:
 Both deployment options install all of the above components. After installation, you can log into the UKC web interface and start using UKC!
 
 ## Installation
-After completing the prerequisites, follow the instructions based on the installation type:
+To get started with the installation, follow the instructions based on the installation type:
 - [Docker](./ukc-docker)
 - [Terraform](./ukc-terraform)
