@@ -520,7 +520,7 @@ resource "null_resource" "ekm_add-aux" {
   ]
 
   #------------------
-  # AUX: bootstrup
+  # AUX: bootstrap
   #------------------
   provisioner "remote-exec" {
     connection {
