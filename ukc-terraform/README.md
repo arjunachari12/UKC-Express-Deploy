@@ -43,17 +43,17 @@ All of these steps should be executed on your AWS server.
 1. Edit *KC_variables.tf*. In the file, set all the following variables:
     - variable "access_key" - *Access Key ID* from AWS.
     - variable "secret_key" - *Secret Access Key* from AWS.
-    - variable "resource-group-name" - 
-    - variable "ep_public_key_path" - 
-    - variable "ep_private_key_path" - 
-    - variable "partner_public_key_path" - 
-    - variable "partner_private_key_path" - 
-    - variable "key_name_0" - 
-    - variable "key_name_1" - 
-    - variable "password1" - 
-    - variable "aws_region" - 
-    - variable "ukc_pac" - the UKC package name downloaded in Step 3.
-    - variable "os_user_0" - 
+    - variable "resource-group-name" - Name to use in AWS.
+    - variable "ep_public_key_path" - Path to the SSH key public part.
+    - variable "ep_private_key_path" - Path to the SSH key private part.
+    - variable "partner_public_key_path" - Path to the SSH key public part.
+    - variable "partner_private_key_path" - Path to the SSH key private part.
+    - variable "key_name_0" - Key name for EP key in the key file.
+    - variable "key_name_1" - Key name for Partner key in the key file.
+    - variable "password1" - Initial password for the UKC.
+    - variable "aws_region" - Region for the AWS server.
+    - variable "ukc_pac" - The UKC package name downloaded in Step 3.
+    - variable "os_user_0" -  EP server user name.
 
 **Step 5: Launch Terraform**
 1. Start Terraform. This step uses the executable that was downloaded in Step 2. You may need to add it to your path.
