@@ -34,13 +34,19 @@ This implementation is only for demo proposes. For production, you can [Deploy U
 	docker login
 	```
 	Enter the credentials that you created for the Docker Hub website.
+	
+	After successful login you see:
+    ````
+    Login Succeeded
+    ````
+    
 1. Run Docker to create the UKC container:
     ```bash
     docker-compose up
     ```
     The setup takes several minutes to complete.
 	
-	Everything is installed and working when you see this message:
+    Everything is installed and working when you see this message:
     ```
     UKC system is ready
     ```
@@ -52,9 +58,12 @@ This implementation is only for demo proposes. For production, you can [Deploy U
     ```
 1. Open your browser and navigate to `https://localhost/login`. Use these credentials to log in:
     - Username: so
-	- Password: Unbound1!
+    - Password: Unbound1!
+    - Partition: root
 
 **Congratulations! UKC is now running.**
+
+You can now explore the web interface as described in the next section.
 
 ## 1.2. Explore the Web Interface
 The Web UI provides the following screens:
