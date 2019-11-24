@@ -404,7 +404,7 @@ resource "null_resource" "copy_id_rsa_to_bastion" {
 }
 
 #########################################
-# UKC bootstrup
+# UKC bootstrap
 #########################################
 resource "null_resource" "ekm_boot_partner" {
   connection {
@@ -522,7 +522,7 @@ resource "null_resource" "ekm_add-aux" {
   ]
 
   #------------------
-  # AUX: bootstrup
+  # AUX: bootstrap
   #------------------
   provisioner "remote-exec" {
     connection {
