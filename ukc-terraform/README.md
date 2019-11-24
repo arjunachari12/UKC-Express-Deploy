@@ -17,11 +17,12 @@
 	- Open SSL 1.1 or newer.
 	
 **Step 2: Install Terraform**
-1. Download Terraform for Linux from https://www.terraform.io/downloads.html.
+1. Download Terraform for Linux from [here](https://www.terraform.io/downloads.html).
     - You need Terraform 0.12 or newer.
 1. Uncompress the archive that you downloaded.
 
 **Step 3: Download the UKC repo**
+
 All of these steps should be executed on your AWS server.
 1. Download or clone the UKC repo. 
 
@@ -68,7 +69,7 @@ All of these steps should be executed on your AWS server.
    $ terraform plan -out=demo.plan -no-color --var "provide_ssh=true" | tee demo.plan.out
    ```
 
-## To Terminate UKC
+## Terminating UKC
 Use this command to terminate UKC.
    ```
    $ terraform destroy -auto-approve --var "provide_ssh=true"
