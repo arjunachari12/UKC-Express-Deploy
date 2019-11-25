@@ -6,10 +6,10 @@ This project provides a quick and easy way to evaluate the Unbound Key Control [
 
 ## 1.1. Getting Started
 
-Use these instructions to get CASP running using Docker.
+UKC has a settings file, called [settings.env](./settings.env). Installation works with the default values set in this file, so you do not have to change anything in it. However, you may want take a look at it to see what parameters can be configured before running the installation process.
 
-1. Configure settings. 
-    UKC has a settings file, called [settings.env](./settings.env). Installation works with the defaults set in this file, so you do not have to change anything in it. However, you may want take a look at it to see what parameters can be configured.
+Use these instructions to get CASP running using Docker.
+    
 1. If you are not registered for Docker, follow the [registration process](https://hub.docker.com/?overlay=onboarding).
 1. Contact Unbound ([support@unboundtech.com](mailto:support@unboundtech.com)) and provide us with your Docker username to get access to the Docker images.
 1. Install Docker.
@@ -47,11 +47,6 @@ Use these instructions to get CASP running using Docker.
     UKC system is ready
     ```
     
-    Note: Docker takes several minutes to create the UKC system. If it hangs for too long, use `Ctrl-c` to stop the process and then run the following commands to restart:
-    ```bash
-    docker-compose down
-    docker-compose up
-    ```
 1. Open your browser and navigate to `https://localhost/login`. Use these credentials to log in:
     - Username: so
     - Password: Unbound1!
@@ -121,6 +116,14 @@ If you need to turn on virtualization on your Windows device, use these instruct
 
 - Enable Hyper-V using the [instructions from Microsoft](https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v).
 - You must [enable virtualization](https://blogs.technet.microsoft.com/canitpro/2015/09/08/step-by-step-enabling-hyper-v-for-use-on-windows-10/) in the BIOS on your device.
+
+### 1.5.3. Docker hangs when starting
+    
+Docker takes several minutes to create the UKC system. If it hangs for too long, use `Ctrl-c` to stop the process and then run the following commands to restart:
+```bash
+docker-compose down
+docker-compose up
+```
 	
 ## 1.6. Tips
 
