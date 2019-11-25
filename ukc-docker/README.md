@@ -130,13 +130,6 @@ If you need to turn on virtualization on your Windows device, use these instruct
 - Enable Hyper-V using the [instructions from Microsoft](https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v).
 - You must [enable virtualization](https://blogs.technet.microsoft.com/canitpro/2015/09/08/step-by-step-enabling-hyper-v-for-use-on-windows-10/) in the BIOS on your device.
 
-### 1.5.3. Docker hangs when starting
-    
-Docker takes several minutes to create the UKC system. If it hangs for too long, use `Ctrl-c` to stop the process and then run the following commands to restart:
-```bash
-docker-compose down
-docker-compose up
-```
 	
 ## 1.6. Tips
 
