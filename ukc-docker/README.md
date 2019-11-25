@@ -104,13 +104,6 @@ To update and restart Docker:
     ```bash
     docker-compose up
     ```
-    
-## 1.4. More Information
-This release has these associated documents:
-
-- [UKC User Guide](https://www.unboundtech.com/docs/UKC/UKC_User_Guide/HTML/Content/Products/Unbound_Cover_Page.htm)
-    - [UKC Web UI](https://www.unboundtech.com/docs/UKC/UKC_User_Guide/HTML/Content/Products/UKC-EKM/UKC_User_Guide/UI/A1.html) - explore more about the Web UI.
-
 
 ## 1.5. Troubleshooting
 
