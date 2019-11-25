@@ -8,7 +8,7 @@ UKC can be rapidly deployed using one of these methods:
 
 The rapid installation process is described below. For the full installation process, refer to the [UKC User Guide](https://www.unboundtech.com/docs/UKC/UKC_User_Guide/HTML/Content/Products/UKC-EKM/UKC_User_Guide/Installation/A1.html).
 
-Note: If you are trying to demo the [CASP Express Deploy](https://github.com/unbound-tech/CASP-Express-Deploy), you cannot run it and the UKC Express Deploy at the same time.
+Note: If you are trying to use the [CASP Express Deploy](https://github.com/unbound-tech/CASP-Express-Deploy), you cannot run it and the UKC Express Deploy at the same time.
 
 ## Overview
 
