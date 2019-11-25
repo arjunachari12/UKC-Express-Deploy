@@ -55,7 +55,7 @@ After installation, you can try some of these tasks:
 1. [Integrate UKC with your system](./#integration)
 
 <a name="webint"></a>
-## 1.2.1. Explore the Web Interface
+### 1.2.1. Explore the Web Interface
 Open your browser and navigate to `https://localhost/login` (for Windows) or `https://<docker-ip-address>/login` (for Linux, where *docker-ip-address* is the server where you installed Docker). Use these credentials to log in:
 - Username: so
 - Password: Unbound1!
@@ -77,14 +77,14 @@ There is also a partition called **test** that you can use.
 For more information on how to use the web interface, see [UKC User Guide](https://www.unboundtech.com/docs/UKC/UKC_User_Guide/HTML/Content/Products/UKC-EKM/UKC_User_Guide/UI/A1.html).
 
 <a name="ukcclient"></a>
-## 1.2.2. Create and activate a client
+### 1.2.2. Create and activate a client
 
 [Contact Unbound](mailto:support@unboundtech.com) to get a link to download the UKC client.
 
 Information about installing the UKC client can be found [here](https://www.unboundtech.com/docs/UKC/UKC_User_Guide/HTML/Content/Products/UKC-EKM/UKC_User_Guide/Installation/ClientInstallation.html#h2_1).
 
 <a name="integration"></a>
-## 1.2.3. Integrate UKC with your system
+### 1.2.3. Integrate UKC with your system
 
 UKC can be integrated with 3rd-party tools, such as databases and web servers. See [here](https://www.unboundtech.com/docs/UKC/UKC_Integration_Guide/HTML/Content/Products/Unbound_Cover_Page.htm) for more information.
 
@@ -105,9 +105,9 @@ To update and restart Docker:
     docker-compose up
     ```
 
-## 1.5. Troubleshooting
+## 1.4. Troubleshooting
 
-### 1.5.1. Cannot open the web console
+### 1.4.1. Cannot open the web console
 
 If you cannot open the UKC web console in your browser, you might have port 443 in use by another service.
 
@@ -123,19 +123,19 @@ For example, to change the port from 443 to 9443:
     ```
 3. Use `https://localhost:9443/login` to open UKC web console.
 
-### 1.5.2. Virtualization
+### 1.4.2. Virtualization
 
 If you need to turn on virtualization on your Windows device, use these instructions:
 
 - Enable Hyper-V using the [instructions from Microsoft](https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v).
 - You must [enable virtualization](https://blogs.technet.microsoft.com/canitpro/2015/09/08/step-by-step-enabling-hyper-v-for-use-on-windows-10/) in the BIOS on your device.
 
-### 1.5.3. UKC logs
+### 1.4.3. UKC logs
 You can see the UKC log files by logging into the Docker container for the EP and then finding the UKC logs. See [here](https://www.unboundtech.com/docs/UKC/UKC_User_Guide/HTML/Content/Products/UKC-EKM/UKC_User_Guide/Logs/A1.html) for more information about the UKC logs.
 
-## 1.6. Tips
+## 1.5. Tips
 
-### 1.6.1. Installing Docker on CentOS 7
+### 1.5.1. Installing Docker on CentOS 7
 
 The default Docker installed by `yum` is an older version of Docker. You can use the technique below to update to a newer Docker version.
 
