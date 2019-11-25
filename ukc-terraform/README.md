@@ -21,8 +21,8 @@ All of these steps should be executed on your AWS server.
     It contains these files:
     - UKC_variables.tf - Terraform configuration file.
     - UKC_unbound.tf - Terraform configuration file.
-1. Download the UKC package. (How do they get this link?)
-    - For example, on CentOS: ekm-2.0.XXX.YYYYY-RHES.x86_64.rpm
+1. [Contact Unbound](mailto:support@unboundtech.com) to get a link to download the UKC package. 
+    - The package has the format: ekm-2.0.XXX.YYYYY-RHES.x86_64.rpm
 
 **Step 4: Configure the Terraform files**
 1. Locate your *Access Key* and *Secret Access Key* on AWS:
