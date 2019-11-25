@@ -7,16 +7,16 @@ variable "secret_key" { default = "<Secret Key>" }
 # Name to use in AWS.
 variable "resource-group-name" { default = "Terraform-UKC-demo"}
       
-# Path to the SSH key public part.
+# Path to the EP SSH key public part.
 variable "ep_public_key_path" { default = "/home/<your user>/.ssh/<public key>" }
       
-# Path to the SSH key private part.
+# Path to the EP SSH key private part.
 variable "ep_private_key_path" { default = "/home/<your user>/.ssh/<private key>" }
       
-# Path to the SSH key public part.
+# Path to the Partner SSH key public part.
 variable "partner_public_key_path" { default = "/home/<your user>/.ssh/<public key>" }
       
-# Path to the SSH key private part.
+# Path to the Partner SSH key private part.
 variable "partner_private_key_path" { default = "/home/<your user>/.ssh/<private key>" }
       
 # Key name for EP key in the key file.
@@ -40,5 +40,5 @@ variable "os_user_0" { default = "centos" }
 # AWS instance type, such as "t3.small"
 variable "instance_type_ukc" { default = "<AWS instance type>" }
 
-# If true, the id_rsa key is copied to bastion and then hosts in the private subnet are accessible by 2 hops
+# If true, you can access the Partner server from the EP server
 variable "provide_ssh" { default = "true" }
