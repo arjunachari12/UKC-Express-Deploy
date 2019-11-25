@@ -100,7 +100,7 @@ To update and restart Docker:
     ```bash
     docker-compose pull
     ```
-3. Start Docker:
+3. Retart Docker:
     ```bash
     docker-compose up
     ```
