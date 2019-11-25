@@ -12,13 +12,25 @@ Note: If you are trying to use the [CASP Express Deploy](https://github.com/unbo
 
 ## Overview
 
+The  system architecture is shown in the following figure.
+
+![UKC System](images/ukc_system.png)
+
 The UKC implementation is comprised of the following components:
 
-1. **UKC Entry Point Server**
-2. **UKC Partner Server**
-3. **UKC Auxiliary Server**
+1. Server Triplet
+    - Entry Point ("EP") Servers
+    - Partner Servers
+    - Auxiliary Servers
+2. UKC Clients
+3. Workstation
 
-Both deployment options install all of the above components. After installation, you can log into the UKC web interface and start using UKC!
+The main part of  is the server triplet: the EP, Partner, and Auxiliary servers. The triplet stores keys and handles all key functions.
+UKC Clients run the UKC command line software or use REST APIs to access the  server triplet.
+
+The Workstation is used to manage the UKC installation.
+
+Both deployment options install the cluster foundation (#1 above). After installation, you can log into the UKC web interface and start using UKC!
 
 ## Installation
 To get started with the installation, follow the instructions based on the installation type:
