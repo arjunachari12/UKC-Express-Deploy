@@ -2,23 +2,20 @@
 
 This project provides a quick and easy way to evaluate the Unbound Key Control [UKC](https://www.unboundtech.com/product/unbound-key-control/) solution. UKC is composed of several components that need to be setup to work properly. Therefore, this quick start solution is provided to enable you to launch UKC without any configuration using Docker.
 
-**Note: This project is intended to be used for POCs, demoes and development.**
-
-This implementation is only for demo proposes. For production, you can [Deploy UKC Using Terraform](../ukc-terraform/README.md).
+**Note: This project is intended to be used for POCs, demoes and development. For production, you can [Deploy UKC Using Terraform](../ukc-terraform/README.md).**
 
 ## 1.1. Getting Started
 
-1. Contact Unbound ([support@unboundtech.com](mailto:support@unboundtech.com)) to get access to the Docker images.
+Use these instructions to get CASP running using Docker.
+
+1. If you are not registered for Docker, follow the [registration process](https://hub.docker.com/?overlay=onboarding).
+1. Contact Unbound ([support@unboundtech.com](mailto:support@unboundtech.com)) and provide us with your Docker username to get access to the Docker images.
 1. Install Docker.
     - For Windows:
         - Install Docker Desktop CE (community edition). It must include Docker Engine version 19.03 or newer. You can get the latest version from [Docker](https://hub.docker.com/?overlay=onboarding).
         - Use the default Docker settings during installation.
-        - If you are not registered for Docker, follow the [registration process](https://hub.docker.com/?overlay=onboarding).
         - Download the Docker Desktop installer and install it.
-        - Enable Hyper-V using the [instructions from Microsoft](https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v).
-        - You must [enable virtualization](https://blogs.technet.microsoft.com/canitpro/2015/09/08/step-by-step-enabling-hyper-v-for-use-on-windows-10/) in the BIOS on your device.
    - For Linux:
-        - If you are not registered for Docker, follow the [registration process](https://hub.docker.com/?overlay=onboarding).
         - Follow the instructions to [install Docker Compose](https://docs.docker.com/compose/install/).
 
        
@@ -119,6 +116,13 @@ For example, to change the port from 443 to 9443:
     ```
 3. Use `https://localhost:9443/login` to open UKC web console.
 
+### 1.5.2. Virtualization
+
+If you need to turn on virtualization on your Windows device, use these instructions:
+
+- Enable Hyper-V using the [instructions from Microsoft](https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v).
+- You must [enable virtualization](https://blogs.technet.microsoft.com/canitpro/2015/09/08/step-by-step-enabling-hyper-v-for-use-on-windows-10/) in the BIOS on your device.
+	
 ## 1.6. Tips
 
 ### 1.6.1. Installing Docker on CentOS 7
