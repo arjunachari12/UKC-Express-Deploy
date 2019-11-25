@@ -130,7 +130,9 @@ If you need to turn on virtualization on your Windows device, use these instruct
 - Enable Hyper-V using the [instructions from Microsoft](https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v).
 - You must [enable virtualization](https://blogs.technet.microsoft.com/canitpro/2015/09/08/step-by-step-enabling-hyper-v-for-use-on-windows-10/) in the BIOS on your device.
 
-	
+### 1.5.3. UKC logs
+You can see the UKC log files by logging into the Docker container for the EP and then finding the UKC logs. See [here](https://www.unboundtech.com/docs/UKC/UKC_User_Guide/HTML/Content/Products/UKC-EKM/UKC_User_Guide/Logs/A1.html) for more information about the UKC logs.
+
 ## 1.6. Tips
 
 ### 1.6.1. Installing Docker on CentOS 7
