@@ -6,9 +6,7 @@ This project provides a quick and easy way to evaluate the Unbound Key Control [
 
 ## 1.1. Getting Started
 
-UKC has a settings file, called [settings.env](./settings.env). Installation works with the default values set in this file, so you do not have to change anything in it. However, you may want take a look at it to see what parameters can be configured before running the installation process.
-
-Use these instructions to get CASP running using Docker.
+Use these instructions to get UKC running using Docker.
     
 1. If you are not registered for Docker, follow the [registration process](https://hub.docker.com/?overlay=onboarding).
 1. Contact Unbound ([support@unboundtech.com](mailto:support@unboundtech.com)) and provide us with your Docker username to get access to the Docker images.
@@ -36,6 +34,7 @@ Use these instructions to get CASP running using Docker.
     Login Succeeded
     ````
     
+1. The Docker installation uses a settings file, called [settings.env](./settings.env). Installation works with the default values set in this file, so you do not have to change anything in it. However, you may want take a look at it to see what settings can be configured before running the installation process. The settings are described in the file.
 1. Run Docker to create the UKC container:
     ```bash
     docker-compose up
@@ -46,17 +45,22 @@ Use these instructions to get CASP running using Docker.
     ```
     UKC system is ready
     ```
-    
-1. Open your browser and navigate to `https://localhost/login`. Use these credentials to log in:
-    - Username: so
-    - Password: Unbound1!
-    - Partition: root
 
 **Congratulations! UKC is now running.**
 
-You can now explore the web interface as described in the next section.
+## 1.2. Next Steps
+After installation, you can try some of these:
+1. [Explore the web interface](./#webint)
+1. [Create and activate a client](./#ukcclient)
+1. [Integrate UKC with your system](./#integration)
 
-## 1.2. Explore the Web Interface
+<a name="webint"></a>
+## 1.2.1. Explore the Web Interface
+Open your browser and navigate to `https://localhost/login`. Use these credentials to log in:
+- Username: so
+- Password: Unbound1!
+- Partition: root
+
 The Web UI provides the following screens:
 
 - Keys and Certificates - provides information about your keys and certificates.
@@ -67,6 +71,22 @@ The Web UI provides the following screens:
 - Config - shows the UKC settings.
 - Rescue - use to reset the SO password.
 - Help - open the UKC User Guide.
+
+There is also a partition called **test** that you can use.
+
+For more information on how to use the web interface, see [UKC User Guide](https://www.unboundtech.com/docs/UKC/UKC_User_Guide/HTML/Content/Products/UKC-EKM/UKC_User_Guide/UI/A1.html).
+
+<a name="ukcclient"></a>
+## 1.2.2. Create and activate a client
+
+[Contact Unbound](mailto:support@unboundtech.com) to get a link to download the UKC client.
+
+Information about installing the UKC client can be found [here](https://www.unboundtech.com/docs/UKC/UKC_User_Guide/HTML/Content/Products/UKC-EKM/UKC_User_Guide/Installation/ClientInstallation.html#h2_1).
+
+<a name="integration"></a>
+## 1.2.3. Integrate UKC with your system
+
+UKC can be integrated with 3rd-party tools, such as databases and web servers. See [here](https://www.unboundtech.com/docs/UKC/UKC_Integration_Guide/HTML/Content/Products/Unbound_Cover_Page.htm) for more information.
 
 ## 1.3. Restarting/Updating Docker
 
