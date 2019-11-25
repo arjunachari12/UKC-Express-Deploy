@@ -26,7 +26,7 @@ variable "key_name_0" { default = "Terraform-UKC-EP-key" }
 variable "key_name_1" { default = "Terraform-UKC-Partner-AUX-key" }
       
 # Initial password for the UKC.
-variable "password1" { default = "Unbound1!" }
+variable "so_password" { default = "Unbound1!" }
 
 # Region for the AWS server.
 variable "aws_region" { default = "<AWS region>" }
