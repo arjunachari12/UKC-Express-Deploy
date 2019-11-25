@@ -14,16 +14,12 @@ Use these instructions to get CASP running using Docker.
     - For Windows:
         - Install Docker Desktop CE (community edition). It must include Docker Engine version 19.03 or newer. You can get the latest version from [Docker](https://hub.docker.com/?overlay=onboarding).
         - Use the default Docker settings during installation.
-        - Download the Docker Desktop installer and install it.
    - For Linux:
         - Follow the instructions to [install Docker Compose](https://docs.docker.com/compose/install/).
-
-       
-1. [Request](mailto:support@unboundtech.com) to be added to Unbound's Docker organization.
+ 
 1. Download or clone this repository from the [main page](https://github.com/unbound-tech/UKC-Express-Deploy) or click [here](https://github.com/unbound-tech/UKC-Express-Deploy/archive/master.zip).
 1. The downloaded repository file should be uncompressed and placed on the device where you will run Docker. The download contains a folder called *ukc-docker*. You must run the Docker commands from this folder.
-1. For Windows, start Docker on your device.
-
+1. Check that Docker is running. 
    You can check if Docker is running with the command `docker info`. If it returns an error, then it is not running. Otherwise, it returns status information about the Docker installation.
 1. Open a terminal and navigate to the `ukc-docker` folder.
 1. Run this command to log into Docker:
