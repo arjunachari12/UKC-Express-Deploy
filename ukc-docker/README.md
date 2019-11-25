@@ -56,7 +56,7 @@ After installation, you can try some of these tasks:
 
 <a name="webint"></a>
 ## 1.2.1. Explore the Web Interface
-Open your browser and navigate to `https://localhost/login`. Use these credentials to log in:
+Open your browser and navigate to `https://localhost/login` (for Windows) or `https://<docker-ip-address>/login` (for Linux, where *docker-ip-address* is the server where you installed Docker). Use these credentials to log in:
 - Username: so
 - Password: Unbound1!
 - Partition: root
