@@ -8,6 +8,8 @@ This project provides a quick and easy way to evaluate the Unbound Key Control [
 
 Use these instructions to get CASP running using Docker.
 
+1. Configure settings. 
+    UKC has a settings file, called [settings.env](./settings.env). Installation works with the defaults set in this file, so you do not have to change anything in it. However, you may want take a look at it to see what parameters can be configured.
 1. If you are not registered for Docker, follow the [registration process](https://hub.docker.com/?overlay=onboarding).
 1. Contact Unbound ([support@unboundtech.com](mailto:support@unboundtech.com)) and provide us with your Docker username to get access to the Docker images.
 1. Install Docker.
@@ -19,8 +21,9 @@ Use these instructions to get CASP running using Docker.
  
 1. Download or clone this repository from the [main page](https://github.com/unbound-tech/UKC-Express-Deploy) or click [here](https://github.com/unbound-tech/UKC-Express-Deploy/archive/master.zip).
 1. The downloaded repository file should be uncompressed and placed on the device where you will run Docker. The download contains a folder called *ukc-docker*. You must run the Docker commands from this folder.
-1. Check that Docker is running. 
-   You can check if Docker is running with the command `docker info`. If it returns an error, then it is not running. Otherwise, it returns status information about the Docker installation.
+1. Check that Docker is running.
+
+    You can check if Docker is running with the command `docker info`. If it returns an error, then it is not running. Otherwise, it returns status information about the Docker installation.
 1. Open a terminal and navigate to the `ukc-docker` folder.
 1. Run this command to log into Docker:
     ```bash
