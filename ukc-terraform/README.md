@@ -32,7 +32,7 @@ All of these steps should be executed on your AWS server.
 	- Find the *Access Credentials* section, and copy the latest *Access Key ID*.
 	- Click on the **Show** link in the same row, and copy the *Secret Access Key*.
 1. Edit *UKC_unbound.tf*. In the file, set the *Access Key ID* and *Secret Access Key*.
-1. Edit *KC_variables.tf*. In the file, follow the comment to set all the necessary variables.
+1. Edit *UKC_variables.tf*. In the file, follow the comments to set all the necessary variables.
 
 **Step 5: Launch Terraform**
 1. Start Terraform. This step uses the executable that was downloaded in Step 2. You may need to add it to your path.
