@@ -54,7 +54,7 @@ After installation, you can try some of these:
 
 <a name="webint"></a>
 ### 1.2.1. Explore the Web Interface
-Open your browser and navigate to `https://<ip-address>/caspui`, where *<ip-address>* is the EP server. Use these credentials to log in:
+Open your browser and navigate to `https://<ip-address>/login`, where *<ip-address>* is the EP server. Use these credentials to log in:
 - Username: so
 - Password: Unbound1!
 - Partition: root
