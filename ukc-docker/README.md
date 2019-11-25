@@ -4,7 +4,7 @@ This project provides a quick and easy way to evaluate the Unbound Key Control [
 
 **Note: This project is intended to be used for POCs, demoes and development. For production, you can [Deploy UKC Using Terraform](../ukc-terraform/README.md).**
 
-## 1.1. Getting Started
+## 1.1. Installation
 
 Use these instructions to get UKC running using Docker.
     
@@ -49,7 +49,7 @@ Use these instructions to get UKC running using Docker.
 **Congratulations! UKC is now running.**
 
 ## 1.2. Next Steps
-After installation, you can try some of these:
+After installation, you can try some of these tasks:
 1. [Explore the web interface](./#webint)
 1. [Create and activate a client](./#ukcclient)
 1. [Integrate UKC with your system](./#integration)
