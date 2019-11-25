@@ -453,8 +453,8 @@ resource "null_resource" "ekm_boot_ep" {
 
   provisioner "remote-exec" {
     inline = [
-      "echo + sudo /opt/ekm/bin/ekm_boot_ep.sh -s ep -p partner -w ${var.password1} -f",
-      "sudo /opt/ekm/bin/ekm_boot_ep.sh -s ep -p partner -w ${var.password1} -f",
+      "echo + sudo /opt/ekm/bin/ekm_boot_ep.sh -s ep -p partner -w ${var.so_password} -f",
+      "sudo /opt/ekm/bin/ekm_boot_ep.sh -s ep -p partner -w ${var.so_password} -f",
       "echo + sleep 20",
       "sleep 20",
       "echo + sudo su - -c 'nohup service ekm start &'",
@@ -557,8 +557,8 @@ resource "null_resource" "ekm_add-aux" {
 
     inline = [
       "uname -a",
-      "echo + sudo ucl server create -a aux -w ${var.password1}",
-      "yes Y | sudo ucl server create -a aux -w ${var.password1}",
+      "echo + sudo ucl server create -a aux -w ${var.so_password}",
+      "yes Y | sudo ucl server create -a aux -w ${var.so_password}",
     ]
   }
 
@@ -604,12 +604,12 @@ resource "null_resource" "ekm_partitions_ep" {
     inline = [
       "echo + ucl server test",
       "ucl server test",
-      "echo + sudo ucl partition create -p partition1 -w ${var.password1} -s ${var.password1}",
-      "sudo ucl partition create -p partition1 -w ${var.password1} -s ${var.password1}",
-      "echo + sudo ucl user reset-pwd -p partition1 -n user -w ${var.password1} -d ${var.password1}",
-      "sudo ucl user reset-pwd -p partition1 -n user -w ${var.password1} -d ${var.password1}",
-      "echo + sudo ucl system-settings set -k no-cert -v 1 -w ${var.password1}",
-      "sudo ucl system-settings set -k no-cert -v 1 -w ${var.password1}",
+      "echo + sudo ucl partition create -p partition1 -w ${var.so_password} -s ${var.so_password}",
+      "sudo ucl partition create -p partition1 -w ${var.so_password} -s ${var.so_password}",
+      "echo + sudo ucl user reset-pwd -p partition1 -n user -w ${var.so_password} -d ${var.so_password}",
+      "sudo ucl user reset-pwd -p partition1 -n user -w ${var.so_password} -d ${var.so_password}",
+      "echo + sudo ucl system-settings set -k no-cert -v 1 -w ${var.so_password}",
+      "sudo ucl system-settings set -k no-cert -v 1 -w ${var.so_password}",
     ]
   }
 }
