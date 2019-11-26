@@ -16,6 +16,8 @@ Use these instructions to get UKC running using Docker.
         - Use the default Docker settings during installation.
    - For Linux:
         - Follow the instructions to [install Docker Compose](https://docs.docker.com/compose/install/).
+   - For Mac:
+       - Install Docker Desktop (community edition) v2.1.0.5 or newer. Follow the instructions to [install Docker Desktop](https://docs.docker.com/compose/install/).
  
 1. Download or clone this repository from the [main page](https://github.com/unbound-tech/UKC-Express-Deploy) or click [here](https://github.com/unbound-tech/UKC-Express-Deploy/archive/master.zip).
 1. The downloaded repository file should be uncompressed and placed on the device where you will run Docker. The download contains a folder called *ukc-docker*. You must run the Docker commands from this folder.
