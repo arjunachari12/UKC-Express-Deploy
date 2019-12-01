@@ -93,3 +93,5 @@ Use this command to terminate UKC.
    $ terraform destroy
    ```
 
+## 1.4 Terraform License
+See [here](https://github.com/hashicorp/terraform/blob/master/LICENSE) for information about the Terraform license.
