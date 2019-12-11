@@ -9,7 +9,7 @@ This project provides a quick and easy way to evaluate the Unbound Key Control [
 Use these instructions to get UKC running using Docker.
     
 1. If you are not registered for Docker, follow the [registration process](https://hub.docker.com/?overlay=onboarding).
-1. Contact Unbound ([support@unboundtech.com](mailto:support@unboundtech.com)) and provide us with your Docker username to get access to the Docker images.
+1. [Contact Unbound](https://www.unboundtech.com/company/contact-us/) and provide us with your Docker username to get access to the Docker images.
 1. Install Docker.
     - For Windows:
         - Install Docker Desktop CE (community edition). It must include Docker Engine version 19.03 or newer. You can get the latest version from [Docker](https://hub.docker.com/?overlay=onboarding).
@@ -81,7 +81,7 @@ For more information on how to use the web interface, see [UKC User Guide](https
 <a name="ukcclient"></a>
 ### 1.2.2. Create and activate a client
 
-[Contact Unbound](mailto:support@unboundtech.com) to get a link to download the UKC client.
+[Contact Unbound](https://www.unboundtech.com/company/contact-us/) to get a link to download the UKC client.
 
 Information about installing the UKC client can be found [here](https://www.unboundtech.com/docs/UKC/UKC_User_Guide/HTML/Content/Products/UKC-EKM/UKC_User_Guide/Installation/ClientInstallation.html#h2_1).
 
