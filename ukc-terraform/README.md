@@ -21,7 +21,7 @@ All of these steps should be executed on your AWS server.
     It contains these files:
     - UKC_variables.tf - Terraform configuration file.
     - UKC_unbound.tf - Terraform configuration file.
-1. [Contact Unbound](mailto:support@unboundtech.com) to get a link to download the **UKC server package** for RedHat. 
+1. [Contact Unbound](https://www.unboundtech.com/company/contact-us/) to get a link to download the **UKC server package** for RedHat. 
     - The package has the format: ekm-2.0.XXX.YYYYY-RHES.x86_64.rpm
 
 **Step 4: Configure the Terraform files**
@@ -77,7 +77,7 @@ For more information on how to use the web interface, see [UKC User Guide](https
 <a name="ukcclient"></a>
 ### 1.2.2. Create and activate a client
 
-[Contact Unbound](mailto:support@unboundtech.com) to get a link to download the UKC client.
+[Contact Unbound](https://www.unboundtech.com/company/contact-us/) to get a link to download the UKC client.
 
 Information about installing the UKC client can be found [here](https://www.unboundtech.com/docs/UKC/UKC_User_Guide/HTML/Content/Products/UKC-EKM/UKC_User_Guide/Installation/ClientInstallation.html#h2_1).
 
