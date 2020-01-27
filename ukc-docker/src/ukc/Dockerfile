@@ -21,9 +21,9 @@ ENV JAVA_HOME=/usr/local/jdk-11.0.2
 ENV PATH=$PATH:$JAVA_HOME/bin
 
 #install UKC
-COPY data/ekm-RHES.x86_64.rpm /ekm-RHES.x86_64.rpm
-RUN rpm -i /ekm-RHES.x86_64.rpm
-RUN rm /ekm-RHES.x86_64.rpm
+COPY data/ekm-el7.x86_64.rpm /ekm-el7.x86_64.rpm
+RUN rpm -i /ekm-el7.x86_64.rpm
+RUN rm /ekm-el7.x86_64.rpm
 
 COPY data/casp_backup.pem /etc/ekm
 

@@ -32,7 +32,7 @@ variable "so_password" { default = "Unbound1!" }
 variable "aws_region" { default = "<AWS region>" }
 
 # The UKC package name downloaded from Unbound.
-variable "ukc_pac" { default = "ekm-<UKC version>-RHES.x86_64.rpm" }
+variable "ukc_pac" { default = "ekm-<UKC version>.el7.x86_64.rpm" }
 
 # EP server user name.
 variable "os_user_0" { default = "centos" }
