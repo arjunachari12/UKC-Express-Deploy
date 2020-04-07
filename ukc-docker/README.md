@@ -38,6 +38,9 @@ Use these instructions to get UKC running using Docker.
     
 1. The Docker installation uses a settings file, called [settings.env](./settings.env). Installation works with the default values set in this file, so you do not have to change anything in it. However, you may want take a look at it to see what settings can be configured before running the installation process. The settings are described in the file.
 1. Run Docker to create the UKC container:
+
+   **Note:** If you are restarting or trying to update UKC Express Deploy, refer to [Restarting/Updating Docker](#update).
+   
     ```bash
     docker-compose up
     ```
@@ -90,6 +93,7 @@ Information about installing the UKC client can be found [here](https://www.unbo
 
 UKC can be integrated with 3rd-party tools, such as databases and web servers. See [here](https://www.unboundtech.com/docs/UKC/UKC_Integration_Guide/HTML/Content/Products/Unbound_Cover_Page.htm) for more information.
 
+<a name="update"></a>
 ## 1.3. Restarting/Updating Docker
 
 To update and restart Docker:
