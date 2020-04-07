@@ -20,7 +20,11 @@ Use these instructions to get UKC running using Docker.
        - Install Docker Desktop (community edition) v2.1.0.5 or newer. Follow the instructions to [install Docker Desktop](https://docs.docker.com/compose/install/).
  
 1. Download or clone this repository from the [main page](https://github.com/unbound-tech/UKC-Express-Deploy) or click [here](https://github.com/unbound-tech/UKC-Express-Deploy/archive/master.zip).
-1. The downloaded repository file should be uncompressed and placed on the device where you will run Docker. The download contains a folder called *ukc-docker*. You must run the Docker commands from this folder.
+1. If you downloaded a compressed (*.zip*) file, uncompress it. 
+1. The download contains a folder called *ukc-docker*. Open a terminal and navigate to the `ukc-docker` folder.
+
+    **Note: All subsequent commands are run from a terminal from this directory.**
+1. Start Docker.
 1. Check that Docker is running.
 
     You can check if Docker is running with the command `docker info`. If it returns an error, then it is not running. Otherwise, it returns status information about the Docker installation.
